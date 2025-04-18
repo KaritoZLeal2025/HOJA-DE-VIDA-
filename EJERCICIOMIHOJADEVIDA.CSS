@@ -1,3 +1,7 @@
+body, html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -29,11 +33,10 @@ header {
 }
 
 .photo img {
-    width: 160px;
-    height: 150px;
+    width: 200px;
+    height: 180px;
     border-radius: 50%;
-    margin-right: 30px;
-    margin-left: 20px;
+    margin-left: 120px;
     border: 3px solid #3498db;
 }
 
@@ -44,10 +47,11 @@ header {
 
 .name h2 {
     margin: 0;
-    font-size: 35px;
+    font-size: 80px;
     color: white;
     text-align: left;
     white-space: nowrap;
+    margin-left: 70px;
 }
 
 .name .small-text {
@@ -55,13 +59,14 @@ header {
     font-size: 16px;
     color: #ffffff;
     text-align: left;
+    margin-left: 110px;
 }
 
 .header-divider {
     width: 1.5px;
     height: 180px;
     background-color: #ffffff;
-    margin: 0 40px;
+    margin-left: 60px;
 }
 
 .header-right {
@@ -105,158 +110,55 @@ header {
 }
 
 li {
-    margin-left: 20px;
+    margin-left: 10px;
 }
+
+.section-title {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 10px 0;
+}
+
+
 
 h2 {
     font-size: 20px;
-    padding-bottom: 3px;
-    margin-bottom: 5px;
-    padding-top: 30px;
+    padding: 4px 0;
+    position: relative;
+    left: 0px; 
+    margin-top: 25px;
+    
 }
 
-.professional-skills {
-    margin-left: 70px;
-}
-
-.expertise {
-    margin-left: 70px;
-}
-
+.professional-skills,
+.expertise,
 .languages {
-    margin-left: 70px;
+    margin-left: 20px;
+    padding-left: 0;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 ul li {
     margin-bottom: 5px;
 }
 
-.professional-skills .barradeprogreso {
-    width: 350px;
-    height: 20px;
-    margin-left: 20px;
-}
-
-.expertise .barradeprogreso {
-    width: 350px;
-    height: 20px;
-    margin-left: 20px;
-}
-
-.languages .barradeprogreso {
-    background: linear-gradient(120deg, #657299);
-    width: 350px;
-    height: 20px;
-    margin-left: 20px;
-}
-
-.job, .degree, .awards {
-    margin-bottom: 15px;
-}
-
-.job h3, .degree h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.awards p {
-    margin: 5px 0;
-}
-
-.professional-experience h2 {
-    background: linear-gradient(100deg, #ababac, #e7e9eb);
-    padding: 0px;
-    margin-top: 45px;
-    text-align: left;
-}
-
-.formal-education h2 {
-    background: linear-gradient(100deg, #ababac, #e7e9eb);
-    padding: 0px;
-    margin-top: 45px;
-}
-
-.awards h2 {
-    background: linear-gradient(100deg, #ababac, #e7e9eb);
-    padding: 0px;
-    margin-top: 45px;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    border-top: 5px solid #7f9fd0;
-    background: linear-gradient(120deg, #536f78, #364851);
-    color: #fff;
-    box-shadow: 0 -10px 15px rgba(255, 255, 255, 0.9), 0 10px 15px rgba(0, 0, 0, 0.7);
-    position: relative;
-    z-index: 50;
-}
-
-footer p {
-    margin: 0;
-    font-size: 20px;
-}
-
-.job h3 {
-    text-align: left;
-    padding-left: 70px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.job p {
-    text-align: justify;
-    padding-left: 195px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.job h4 {
-    text-align: left;
-    padding-left: 195px;
-    margin-bottom: 0px;
-}
-
-.degree h3 {
-    text-align: left;
-    padding-left: 70px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.degree p {
-    text-align: justify;
-    padding-left: 195px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.degree h4 {
-    text-align: left;
-    padding-left: 195px;
-    margin-bottom: 0px;
-}
-
-.awards {
-    padding-bottom: 80px;
-}
-
 .barradeprogreso {
     position: relative;
-    width: 100%;
+    width: 350px;
     height: 20px;
+    margin: 5px 0 15px 20px;
     background-color: #e0e0e0;
     border-radius: 10px;
 }
 
-.barraprogreso1 {
+.barraprogreso1, .barraprogreso3, .barraprogreso5 {
     position: absolute;
     top: 0;
     left: 0;
@@ -273,30 +175,12 @@ footer p {
     background-color: #fecc88;
 }
 
-.barraprogreso3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #657299;
-    border-radius: 10px 0 0 10px;
-}
-
 .barraprogreso4 {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background-color: #6e98d8;
-}
-
-.barraprogreso5 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #657299;
-    border-radius: 10px 0 0 10px;
 }
 
 .barraprogreso6 {
@@ -307,14 +191,188 @@ footer p {
     background-color: #8ec68b;
 }
 
-.professional-experience h2,
-.formal-education h2,
+.job, .degree, .awards {
+    margin-bottom: 15px;
+}
+
+.job h3, .degree h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.awards p {
+    margin: 5px 0;
+}
+
+.professional-experience h2 {
+    background: linear-gradient(100deg, #ababac, #ffffff);
+    padding: 10px 20px;
+    margin: 45px 0 15px -52px;
+   margin-top: 19px;
+    text-align: left;
+    padding-left: 89px;
+}
+
+
+
+.formal-education h2{
+    background: linear-gradient(100deg, #ababac, #ffffff);
+    padding: 10px 20px;
+    margin: 60px 0px 15px -52px;
+    margin-top: 15px;
+    text-align: left;
+    padding-left: 90px;
+    font-size: 21px
+}
+
+
 .awards h2 {
     background: linear-gradient(100deg, #ababac, #ffffff);
     padding: 10px 20px;
-    margin: 45px 0 15px -20px;
+    margin: 45px 0 15px -50px;
+    margin-top: 16px;
+    text-align: left;
+    padding-left: 90px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-top: 5px solid #7f9fd0;
+    background: linear-gradient(120deg, #536f78, #364851);
+    color: #fff;
+    box-shadow: 0 -10px 15px rgba(255, 255, 255, 0.9), 0 10px 15px rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 50;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.experience-group {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 180px; 
+    min-height: 60px;
+}
+
+.experience-group h3 {
+    position: absolute;
+    left: 70px; 
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    color: #000000;
+}
+
+.date-title {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5px;
+    padding-left: 120px; 
+}
+
+.date-title h3 {
+    
+    color: #000000;
+    width: 120px; 
+    margin-right: 20px; 
+    flex-shrink: 0; 
+}
+
+.date-title h4 {
+    font-size: 16px;
+    margin: 0;
+   
+}
+
+.job p {
+    margin-left: 165px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
     text-align: left;
 }
+
+.job-title-container {
+    margin: 0;
+    padding: 0;
+}
+
+
+.job-title-container h4 {
+    font-size: 15.5px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    margin-right: 20px;
+}
+
+
+.job-title-container h5 {
+    font-size: 15px;
+    margin: 2px 0 0 0;
+    padding: 0;
+    color: #000000;
+
+    line-height: 1.2;
+}
+
+
+.experience-group p {
+    margin: 5px 0 0 0;
+    padding: 0;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+
+.degree h3 {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.degree p {
+    text-align: justify;
+    padding-left: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.degree h4 {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.awards {
+    padding-bottom: 140px;
+}
+
+.awards-textos{
+    margin-left: 30px;
+}
+
+
+.emoji {
+    position: relative;
+    z-index: 2; 
+    font-size: 1.7em;
+    margin-left:-10px;
+    
+}
+
+ol{
+    margin: 0 20px 2px 0;
+}
+
+
 
 @media (min-width: 1000px) {
 
@@ -340,15 +398,38 @@ footer p {
     }
     
     .photo img {
-        width: 140px;
-        height: 130px;
+        width: 120px;
+        height: 110px;
+        margin-right: 2px;
     }
     
     .name h2 {
         font-size: 30px;
     }
 
+    .name h2 {
+        margin: 0;
+        font-size: 27px;
+        color: white;
+        text-align: left;
+        white-space: nowrap;
+        margin-right: 14px;
+    }
+    
+    .name .small-text {
+        margin: 0;
+        font-size: 16px;
+        color: #ffffff;
+        text-align: left;
+        margin-left: 25px;
+    }
 
+    .header-divider {
+        width: 1.5px;
+        height: 180px;
+        background-color: #ffffff;
+        margin-left: 80px;
+    }
 }
 
 
@@ -388,6 +469,16 @@ footer p {
 
 
 @media (min-width: 800px) and (max-width: 1000px) {
+
+
+    .photo img {
+        width: 200px;
+        height: 180px;
+        border-radius: 50%;
+        margin-left: -10px;
+        border: 3px solid #3498db;
+    }
+
     header {
         display: flex;
         flex-direction: column;
@@ -395,11 +486,14 @@ footer p {
     }
     
     .header-left {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         justify-content: center;
         margin-bottom: 15px;
     }
-    
+
+
     .header-divider {
         width: 80%;
         height: 1.5px;
@@ -424,8 +518,7 @@ footer p {
     }
     .job p, 
     .degree p {
-        padding-left: 20px;
-        padding-right: 20px;
+       
         text-align: left;
         margin-right: 15px;
         word-break: break-word;
@@ -435,7 +528,7 @@ footer p {
     .degree h4,
     .job h3,
     .degree h3 {
-        padding-left: 20px;
+       
         padding-right: 20px;
     }
     
@@ -444,127 +537,338 @@ footer p {
         text-align: center;
         padding: 0 15px;
     }
+
+    .job-title-container h5 {
+        font-size: 15px;
+        margin: 2px 0 0 0;
+        padding: 0;
+        color: #000000;
+        line-height: 1.2;
+        
+    }
+
+    .name h2{
+        margin-right: 100px;
+    }
+
+    .header-right h1{
+        margin-right: 20px;
+    }
 }
 
 
 
 
 
-@media (max-width: 600px) {
-    .container {
-        width: 95%;
-    }
-    
+@media (min-width: 600px) and (max-width: 799px) {
+
+   
+
     .photo img {
-        width: 120px;
-        height: 110px;
-    }
-    
-    .name h2 {
-        font-size: 26px;
-    }
-    
-    .header-right h1 {
-        font-size: 24px;
-    }
-    
-    .header-right p {
-        font-size: 12px;
-    }
-    
-    footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 20px;
-    }
-    
-    footer p {
-        font-size: 16px;
-    }
-    
-    .job h4, .degree h4 {
-        padding-left: 40px;
-    }
-    
-    .job p, .degree p {
-        padding-left: 40px;
-    }
-    
-    .job h3, .degree h3 {
-        padding-left: 40px;
+        width: 200px;
+        height: 180px;
+        border-radius: 50%;
+        margin-left: -10px;
+        border: 3px solid #3498db;
     }
 
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .header-left {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+
+    .header-divider {
+        width: 80%;
+        height: 1.5px;
+        margin: 15px auto;
+    }
+    
+    .header-right {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .body-container {
+        flex-direction: column;
+    }
+    
+    .left-column, .right-column {
+        width: 100%;
+    }
+    
+    .professional-skills, .expertise, .languages {
+        margin-left: 40px;
+    }
     .job p, 
     .degree p {
-        padding-left: 20px;
-        padding-right: 20px;
+       
         text-align: left;
         margin-right: 15px;
         word-break: break-word;
     }
     
+    .job h4,
+    .degree h4,
+    .job h3,
+    .degree h3 {
+       
+        padding-right: 20px;
+    }
+    
+   
+    footer p {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .job-title-container h5 {
+        font-size: 15px;
+        margin: 2px 0 0 0;
+        padding: 0;
+        color: #000000;
+        line-height: 1.2;
+        
+    }
+
+    .name h2{
+        margin-right: 100px;
+    }
+
+    .header-right h1{
+        margin-right: 20px;
+    }
+}
+
+
+@media (min-width:401px) and (max-width:599px) {
+
+
+    .photo img {
+        width: 200px;
+        height: 180px;
+        border-radius: 50%;
+        margin-right: 120px;
+        border: 3px solid #3498db;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .header-left {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+
+    .header-divider {
+        width: 80%;
+        height: 1.5px;
+        margin: 15px auto;
+    }
+    
+    .header-right {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .body-container {
+        flex-direction: column;
+    }
+    
+    .left-column, .right-column {
+        width: 100%;
+    }
+    
+    .professional-skills, .expertise, .languages {
+        margin-left: 40px;
+    }
+    .job p, 
+    .degree p {
+       
+        text-align: left;
+        margin-right: 15px;
+        word-break: break-word;
+    }
     
     .job h4,
     .degree h4,
     .job h3,
     .degree h3 {
-        padding-left: 20px;
+       
         padding-right: 20px;
     }
     
-    
+   
     footer p {
         text-align: center;
-        padding: 0 15px;
+        padding: 0 2px;
     }
+
+    .job-title-container h5 {
+        font-size: 15px;
+        margin: 2px 0 0 0;
+        padding: 0;
+        color: #000000;
+        line-height: 1.2;
+        
+    }
+
+    .name h2{
+        margin-right: 100px;
+    }
+
+    .header-right h1{
+        margin-right: 20px;
+    }
+
 }
+
 
 
 
 
 @media (max-width: 400px) {
+
+
+
     .photo img {
-        width: 120px;
-        height: 120px;
+        width: 200px;
+        height: 180px;
+        border-radius: 50%;
+        margin-left: -10px;
+        border: 3px solid #3498db;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
     }
     
-    .name h2 {
-        font-size: 28px;
+    .header-left {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+
+    .header-divider {
+        width: 80%;
+        height: 1.5px;
+        margin: 15px auto;
     }
     
-    .professional-skills,
-    .expertise,
-    .languages {
-        margin-left: 20px;
+    .header-right {
+        width: 100%;
+        margin-left: 0;
     }
     
-    .barradeprogreso {
-        width: 90%;
+    .body-container {
+        flex-direction: column;
     }
     
-   
+    .left-column, .right-column {
+        width: 100%;
+        text-align:start;
+        display: flex;
+        flex-direction: column;
+               
+    }
+    
+    .professional-skills, .expertise, .languages {
+        margin-left: 40px;
+    }
     .job p, 
     .degree p {
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: left;
+       
+        text-align:start;
         margin-right: 15px;
         word-break: break-word;
     }
     
- 
-    .job h4,
-    .degree h4,
-    .job h3,
-    .degree h3 {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+     .experience-group{
+        padding-left: 0px;
+     }
     
+   
 
     footer p {
         text-align: center;
-        padding: 0 15px;
+        
+    }
+
+    .job-title-container h5 {
+        font-size: 15px;
+        margin: 2px 0 0 0;
+        padding: 0;
+        color: #000000;
+        line-height: 1.2;
+        
+    }
+
+    .name h2{
+        margin-right: 100px;
+    }
+
+    .header-right h1{
+        margin-right: 20px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .job h3{
+     font-size: 15px;
+     
+    }
+
+    .experience-group h3 {
+      position:initial;
+      
+    }
+
+    
+
+    .job h4{
+        margin-top: 20px;
+       
+    }
+
+    footer p{
+        position: initial;
+    }
+    
+
+    .awards-textos {
+       
+         margin-left: 0px;
+         
+    }
+
+    .professional-experience h2, .formal-education h2, .awards h2{
+        padding-left: 70px;
     }
 }
+
+
